@@ -1,6 +1,6 @@
 import pygame
 
-from sys import exit  # to exit the game without having issues with the True loop
+from sys import exit
 from random import randint
 import math
 
@@ -26,7 +26,7 @@ MIN_STOCK_TO_UPDATE = 100
 screen = pygame.display.set_mode((SCREEN_WIDTH,
                                   SCREEN_HEIGHT))
 pygame.display.set_caption('PyEvolve')
-clock = pygame.time.Clock()  # clock object to handle frame rate
+clock = pygame.time.Clock()
 game_active = True
 running = True
 
@@ -43,7 +43,7 @@ def listen_to_key_binding():
                 pygame.quit()
                 exit()
 
-while running:  # The game will be continuously updated.
+while running:
     listen_to_key_binding()
     if game_active:
         if screen_selected == Screens.SPLASH:
@@ -69,5 +69,5 @@ while running:  # The game will be continuously updated.
         else:
             print("HOLA")
 
-    pygame.display.update()  # update the screen
-    clock.tick(60)  # while True runs 60 times per second
+    pygame.display.update()
+    clock.tick(60)
