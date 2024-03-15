@@ -25,7 +25,6 @@ PRODUCT_HEIGHT = 28
 MARGIN = 130
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
-MIN_STOCK_TO_UPDATE = 100
 screen = pygame.display.set_mode((SCREEN_WIDTH,
                                   SCREEN_HEIGHT))
 pygame.display.set_caption('PyEvolve')
